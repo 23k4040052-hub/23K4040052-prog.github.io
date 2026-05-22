@@ -1,16 +1,356 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="vi">
 <head>
-<title>Website của tôi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hồ Văn Hoá Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.7;
+overflow-x:hidden;
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+background:
+linear-gradient(rgba(15,23,42,.7),rgba(15,23,42,.8)),
+url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+background-size:cover;
+background-position:center;
+}
+
+.hero{
+max-width:800px;
+}
+
+.hero img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #38bdf8;
+box-shadow:0 0 40px rgba(56,189,248,.5);
+margin-bottom:25px;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:700;
+margin-bottom:10px;
+color:#38bdf8;
+}
+
+.hero h2{
+font-size:24px;
+font-weight:400;
+margin-bottom:25px;
+color:#e2e8f0;
+}
+
+.hero p{
+font-size:18px;
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:35px;
+padding:14px 35px;
+background:#38bdf8;
+color:#0f172a;
+text-decoration:none;
+font-weight:600;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+background:white;
+}
+
+section{
+padding:90px 10%;
+}
+
+.title{
+font-size:38px;
+margin-bottom:40px;
+color:#38bdf8;
+position:relative;
+display:inline-block;
+}
+
+.title::after{
+content:'';
+position:absolute;
+left:0;
+bottom:-10px;
+width:70%;
+height:4px;
+background:#38bdf8;
+border-radius:10px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about-box{
+background:#1e293b;
+padding:35px;
+border-radius:25px;
+box-shadow:0 0 25px rgba(0,0,0,.3);
+}
+
+.about-box p{
+color:#cbd5e1;
+font-size:17px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.skill-card{
+background:#1e293b;
+padding:30px;
+border-radius:20px;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-10px);
+}
+
+.skill-card h3{
+margin-bottom:15px;
+color:#38bdf8;
+}
+
+.timeline{
+border-left:3px solid #38bdf8;
+padding-left:30px;
+}
+
+.timeline-item{
+margin-bottom:40px;
+}
+
+.timeline-item h3{
+color:#38bdf8;
+margin-bottom:8px;
+}
+
+.contact{
+background:#1e293b;
+padding:50px;
+border-radius:25px;
+text-align:center;
+}
+
+.contact p{
+margin:12px 0;
+font-size:18px;
+color:#cbd5e1;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:42px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+section{
+padding:70px 7%;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Xin chào 👋</h1>
+<header>
 
-<p>Đây là website đầu tiên của tôi.</p>
+<div class="hero">
+
+<img src="avatar.jpg">
+
+<h1>Hồ Văn Hoá</h1>
+
+<h2>Sinh viên năm 3 — Kinh doanh thương mại</h2>
+
+<p>
+Mình là người yêu thích môi trường kinh doanh hiện đại,
+đặc biệt quan tâm đến chiến lược bán hàng, quản lý vận hành
+và phát triển thương hiệu trong thời đại số.
+Mục tiêu của mình là trở thành một nhà quản trị kinh doanh
+linh hoạt, sáng tạo và có khả năng thích nghi cao với thị trường.
+</p>
+
+<a href="#about" class="btn">Khám phá thêm</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2 class="title">Về bản thân</h2>
+
+<div class="about">
+
+<div class="about-box">
+
+<p>
+Là sinh viên ngành Kinh doanh thương mại tại Đại học Kinh tế Huế,
+mình luôn chủ động tìm kiếm cơ hội để học hỏi kỹ năng thực tế,
+từ giao tiếp khách hàng, quản lý công việc cho đến làm việc nhóm.
+Mình yêu thích những công việc cần sự sáng tạo, tư duy linh hoạt
+và khả năng giải quyết vấn đề nhanh chóng.
+</p>
+
+</div>
+
+<div class="about-box">
+
+<p>
+Ngoài việc học trên lớp, mình thường xuyên tìm hiểu về thương mại điện tử,
+marketing hiện đại và cách các thương hiệu xây dựng hình ảnh trên nền tảng số.
+Mình tin rằng sự chuyên nghiệp không chỉ đến từ kiến thức,
+mà còn từ thái độ làm việc và tinh thần cầu tiến mỗi ngày.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Kỹ năng</h2>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Quản lý công việc</h3>
+<p>Biết sắp xếp thời gian, quản lý tiến độ và xử lý công việc hiệu quả.</p>
+</div>
+
+<div class="skill-card">
+<h3>Giao tiếp khách hàng</h3>
+<p>Có khả năng giao tiếp lịch sự, tạo thiện cảm và hỗ trợ khách hàng tốt.</p>
+</div>
+
+<div class="skill-card">
+<h3>Làm việc nhóm</h3>
+<p>Dễ thích nghi với môi trường tập thể và phối hợp công việc linh hoạt.</p>
+</div>
+
+<div class="skill-card">
+<h3>Thiết kế cơ bản</h3>
+<p>Sử dụng Canva và các công cụ hỗ trợ truyền thông cơ bản.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Hoạt động & Kinh nghiệm</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>2023 — Thành viên CLB Học Làm Giàu</h3>
+<p>
+Tham gia các hoạt động kỹ năng mềm, thuyết trình,
+học hỏi tư duy kinh doanh và phát triển bản thân.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>2024 — Cộng tác viên bán hàng online</h3>
+<p>
+Hỗ trợ đăng bài sản phẩm, chăm sóc khách hàng
+và tìm hiểu quy trình bán hàng trên nền tảng mạng xã hội.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>2025 — Thực tập tại khách sạn</h3>
+<p>
+Hỗ trợ bộ phận lễ tân và chăm sóc khách hàng,
+rèn luyện khả năng giao tiếp và xử lý tình huống thực tế.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Liên hệ</h2>
+
+<div class="contact">
+
+<p>📞 012345678</p>
+
+<p>📧 23K4040052@hce.edu.vn</p>
+
+<p>📘 facebook.com/vanhoaa25</p>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 — Hồ Văn Hoá Portfolio
+
+</footer>
 
 </body>
-
 </html>
